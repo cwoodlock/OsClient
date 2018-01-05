@@ -1,4 +1,10 @@
 package ie.gmit.os;
+/*
+ * Colm Woodlock
+ * G00341460
+ * https://github.com/cwoodlock/OsClient
+ * This is a project for 3rd year module Operating Systems in GMIT
+ */
 
 import java.io.*;
 import java.net.*;
@@ -33,13 +39,11 @@ public class Requester{
 					//read message from server
 					message = (String) in.readObject();
 					System.out.println(message);
+					
 					//send message to server
 					message = stdin.next();
 					sendMessage(message);	
-				
 					
-						
-						
 				}
 				catch(ClassNotFoundException classNot)
 				{
