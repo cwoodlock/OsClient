@@ -29,63 +29,14 @@ public class Requester{
 			do{
 				try
 				{
-					message = (String)in.readObject();
-					System.out.println(message);
-					message = stdin.next();
-					sendMessage(message);
 					
-					if(message.compareToIgnoreCase("1")==0)
-					{
-						message = (String)in.readObject();
-						System.out.println(message);
-						message = stdin.next();
-						sendMessage(message);
-						
-						message = (String)in.readObject();
-						System.out.println(message);
-						message = stdin.next();
-						sendMessage(message);
-						
-						message = (String)in.readObject();
-						System.out.println(message);
-						
-					}
-					else if(message.compareToIgnoreCase("2")==0)
-					{
-						message = (String)in.readObject();
-						System.out.println(message);
-						message = stdin.next();
-						sendMessage(message);
-						
-						if(message.equalsIgnoreCase("1"))
-						{
-							message = (String)in.readObject();
-							System.out.println(message);
-							message = stdin.next();
-							sendMessage(message);
-							
-							message = (String)in.readObject();
-							System.out.println(message);
-							message = stdin.next();
-							sendMessage(message);
-							
-							message = (String)in.readObject();
-							System.out.println(message);
-							
-						}
-						
-						else if(message.equalsIgnoreCase("2"))
-						{
-							message = (String)in.readObject();
-							System.out.println(message);
-							message = stdin.next();
-							sendMessage(message);
-							
-							message = (String)in.readObject();
-							System.out.println(message);
-							
-						}
-					}
+					//read message from server
+					message = (String) in.readObject();
+					System.out.println(message);
+					//send message to server
+					message = stdin.next();
+					sendMessage(message);	
+				
 					
 						
 						
